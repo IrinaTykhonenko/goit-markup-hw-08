@@ -1,0 +1,13 @@
+.page-footer__logo {
+  color: $white-color;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &--accent {
+    color: $accent-color;
+  }
+}

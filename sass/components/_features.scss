@@ -1,0 +1,91 @@
+.section-features__list {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.section-features__list .section-features__item {
+  width: 450px;
+  @include for-size(tablet) {
+    width: 354px;
+  }
+  @include for-size(desktop) {
+    width: 270px;
+  }
+}
+
+.section-features__title {
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @include for-size(mobile) {
+    text-align: center;
+  }
+  @include for-size(mobile-only) {
+    text-align: center;
+  }
+  @include for-size(tablet) {
+    text-align: start;
+  }
+}
+
+.section-features__item::before {
+  content: " ";
+  display: block;
+  background-color: $secondary-bg-color;
+  background-size: contain;
+
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+  @include for-size(desktop) {
+    width: 270px;
+  }
+}
+
+.section-features__item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+  background-size: 70px;
+}
+.section-features__item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+  background-size: 70px;
+}
+.section-features__item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+  background-size: 70px;
+}
+.section-features__item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+  background-size: 70px;
+}
+
+.section-features__desc {
+  margin-top: 0;
+  margin-bottom: 0;
+}
