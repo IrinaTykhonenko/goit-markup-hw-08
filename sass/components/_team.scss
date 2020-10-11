@@ -10,18 +10,6 @@
   }
 }
 
-// @include for-size(tablet-only) {
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: calc((100% - 30px) / 2);
-// }
-// justify-content: space-between;
-
-// @include for-size(desktop) {
-//   display: flex;
-// }
-// display: flex;
-
 .section-team__card {
   background-color: $white-color;
   border-radius: 0px 0px 4px 4px;
@@ -38,15 +26,9 @@
     margin-top: 30px;
   }
 
-  // &:nth-child(2n) {
-  //   margin-left: 30px;
-  // }
   @include for-size(desktop) {
     width: calc((100% - 30px * 3) / 4);
   }
-  // &:nth-child(2n) {
-  //   margin-left: 0;
-  // }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .section-team__card:nth-child(2n) {
@@ -59,15 +41,6 @@
     margin-right: 30px;
   }
 }
-
-// .section-team__card:not(:last-child) {
-//   @include for-size(tablet-only) {
-//     margin-bottom: 30px;
-//   }
-//   @include for-size(desktop) {
-//     margin-right: 30px;
-//   }
-// }
 
 .section-team__member {
   color: $title-text-color;
