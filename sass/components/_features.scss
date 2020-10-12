@@ -16,7 +16,8 @@
 }
 
 .section-features__list .section-features__item {
-  width: 450px;
+  width: 100%;
+
   @include for-size(tablet) {
     width: 354px;
   }
@@ -52,7 +53,6 @@
   background-color: $secondary-bg-color;
   background-size: contain;
 
-  width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;

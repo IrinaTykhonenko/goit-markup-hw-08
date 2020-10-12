@@ -6,13 +6,15 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__sign {
-    margin-left: 25%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .footer__sign-form {
   margin-top: 20px;
   justify-content: space-between;
+  display: block;
 }
 
 .footer__sign-title {
@@ -26,7 +28,6 @@
 }
 
 .sign-input {
-  width: 358px;
   height: 50px;
   padding: 15px 0 15px 16px;
   font-size: 16px;
@@ -43,13 +44,13 @@
   }
 
   @include for-size(desktop) {
+    width: 358px;
     margin-right: 12px;
   }
 
   @include for-size(desktop-only) {
-    display: block;
     margin-bottom: 20px;
-    width: 450px;
+    width: 100%;
   }
 }
 

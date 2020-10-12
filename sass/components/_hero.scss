@@ -32,9 +32,16 @@
   }
 }
 
+.hero .container {
+  text-align: center;
+}
+
 .hero__title {
+  max-width: 360px;
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: $white-color;
   letter-spacing: 0.06em;
   font-weight: 900;
@@ -44,5 +51,6 @@
 
   @include for-size(desktop) {
     font-size: 44px;
+    max-width: 696px;
   }
 }
