@@ -549,6 +549,7 @@ body {
 
 .thumb__img {
   width: 100%;
+  height: fit-content;
 }
 
 .thumb__overlay {
